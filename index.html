@@ -1,36 +1,82 @@
 <!doctype html>
-<html>
+<html style="height:100vh">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Photography demo</title>
 
+    <style>
+      html, body{
+        margin:0;
+        padding:0;
+      }
+      .full-body-header{
+        height:100vh;
+        background-image: url("background.jpg");
+        color:white;
+        margin:0;
+      }
+
+      .items a{
+        margin:0px 10px 0px 10px;
+        font-weight: bolder;
+      }
+
+      .glass{
+        padding: 50px;
+        backdrop-filter: blur(5px);
+        border: aliceblue solid;
+        border-radius: 0px 200px 0px 200px;
+        font-weight: bolder;
+      }
+      
+    </style>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body>
+  
+  <body style="min-height:100vh">
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="d-flex container-md">
-        <div class="container-fluid d-flex">
+    
+    
+    <header class="full-body-header">
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark" style="background-color: transparent !important;">
+        <div class="d-flex container-md">
+          <div class="container-fluid d-flex">
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+              <div class="navbar-nav items">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+              </div>
             </div>
+  
           </div>
+        
+      </div>
+      </nav>
 
+
+
+
+      <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center">
+          <div class="container glass" style="text-align:center">
+            <h1 class="display-2">Photography site</h1><br>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          </div>
         </div>
-      
-    </div>
-    </nav>
+      </div>
+    </header>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
